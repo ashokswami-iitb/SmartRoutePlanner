@@ -61,19 +61,6 @@ The testing executable is also placed in the `build` directory. From within `bui
 ```
 
 ## Troubleshooting
-* Some students have reported issues in cmake to find io2d packages, make sure you have downloaded [this](https://github.com/cpp-io2d/P0267_RefImpl/blob/master/BUILDING.md#xcode-and-libc).
-* For MAC Users cmake issues: Comment these lines from CMakeLists.txt under P0267_RefImpl
-    ```
-    if( NOT DEFINED IO2D_WITHOUT_SAMPLES )
-	     add_subdirectory(P0267_RefImpl/Samples)
-    endif()
-    ```
-    And then run "ALL_Build" and "install" in XCode.
-    
-    If any packages are missing try to install packages using 
-    ```
-    brew install pkg-config
-    ```
  * For Ubuntu Linux IO2D installation errors, follow the given steps:
    ```
 	sudo apt update
